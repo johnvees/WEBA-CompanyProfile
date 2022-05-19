@@ -43,6 +43,10 @@
 @import 'utilities';
 @import 'print';
 
+.landing-page-body {
+    background-color: $black;
+}
+
 .icon-logo {
     width: 139px;
     height: auto;

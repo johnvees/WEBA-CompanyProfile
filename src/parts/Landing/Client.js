@@ -7,7 +7,7 @@ export default function Client() {
         Our Clients
       </h2>
       <div className="row align-items-center">
-        <div className="col-3">
+        <div className="col-sm-3">
           <div className="row">
             <div
               className="m-2 w-100 rounded "
@@ -19,7 +19,7 @@ export default function Client() {
             ></div>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-sm-3">
           <div className="row">
             <div
               className="m-2 w-100 rounded "
@@ -31,7 +31,7 @@ export default function Client() {
             ></div>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-sm-3">
             <div className="row">
             <div
               className="m-2 w-100 rounded "
@@ -43,7 +43,7 @@ export default function Client() {
             ></div>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-sm-3">
             <div className="row">
             <div
               className="m-2 w-100 rounded "

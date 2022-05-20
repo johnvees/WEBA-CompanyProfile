@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function Content() {
   return (
@@ -7,27 +7,27 @@ export default function Content() {
         Get In Touch With Us
       </h2>
       <div className="row align-items-center">
-        <div className="col-sm-3">
+        <div className=" p-2 col-sm-3">
           <div
-            className="m-2 w-100 rounded "
+            className=" w-100 rounded "
             style={{ backgroundColor: '#FCFCFC', height: 80 }}
           ></div>
         </div>
-        <div className="col-sm-3">
+        <div className=" p-2 col-sm-3">
           <div
-            className="m-2 w-100 rounded "
+            className=" w-100 rounded "
             style={{ backgroundColor: '#FCFCFC', height: 80 }}
           ></div>
         </div>
-        <div className="col-sm-3">
+        <div className=" p-2 col-sm-3">
           <div
-            className="m-2 w-100 rounded "
+            className=" w-100 rounded "
             style={{ backgroundColor: '#FCFCFC', height: 80 }}
           ></div>
         </div>
-        <div className="col-sm-3">
+        <div className=" p-2 col-sm-3">
           <div
-            className="m-2 w-100 rounded "
+            className=" w-100 rounded "
             style={{ backgroundColor: '#FCFCFC', height: 80 }}
           ></div>
         </div>

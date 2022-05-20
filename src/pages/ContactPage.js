@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from 'parts/Header';
+import Hero from 'parts/Contact/Hero';
 
 export default class ContactPage extends Component {
   componentDidMount() {
@@ -12,7 +13,9 @@ export default class ContactPage extends Component {
     return (
       <>
         <Header {...this.props}></Header>
-        <div className="landing-page-body"></div>
+        <div className="landing-page-body">
+          <Hero />
+        </div>
       </>
     );
   }

@@ -56,6 +56,7 @@ export default function Client() {
           </div>
         </div>
       </div>
+      <div className='pb-5'></div>
     </section>
   );
 }

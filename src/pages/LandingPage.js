@@ -7,6 +7,11 @@ import About from 'parts/Landing/About';
 import Client from 'parts/Landing/Client';
 import Footer from 'parts/Footer';
 export default class LandingPage extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+    document.title = 'WEBA | Home';
+  }
+
   render() {
     return (
       <>

@@ -15,8 +15,8 @@ export default function Header(props) {
           <Logo />
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-auto">
-              <li className={`nav-item${getNavLinkClass('/')}`}>
-                <Button className="nav-link" type="link" href="/">
+              <li className={`nav-item${getNavLinkClass('/landing-page')}`}>
+                <Button className="nav-link" type="link" href="/landing-page">
                   Home
                 </Button>
               </li>

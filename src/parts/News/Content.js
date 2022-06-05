@@ -14,7 +14,7 @@ export default function Content() {
       >
         <img
           src={ImageProduct_}
-          alt="Image Shoe Product"
+          alt="Shoe Product"
           className="img-fluid rounded-lg w-100"
           style={{ height: 550, objectFit: 'cover' }}
         />
@@ -36,7 +36,7 @@ export default function Content() {
         >
           <img
             src={ImageProduct_}
-            alt="Image Shoe Product"
+            alt="Shoe Product"
             className="img-fluid rounded-lg w-100"
             style={{ height: 240, objectFit: 'cover' }}
           />
@@ -60,7 +60,7 @@ export default function Content() {
         >
           <img
             src={ImageProduct_}
-            alt="Image Shoe Product"
+            alt="Shoe Product"
             className="img-fluid rounded-lg w-100"
             style={{ height: 240, objectFit: 'cover' }}
           />

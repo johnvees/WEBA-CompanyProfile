@@ -8,7 +8,7 @@ import Footer from 'parts/Footer';
 export default class ContactPage extends Component {
   componentDidMount() {
     window.scroll(0, 0);
-    document.title = 'WEBA | Contact';
+    document.title = 'WEBA | Contact Us';
   }
 
   render() {

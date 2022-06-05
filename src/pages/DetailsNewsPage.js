@@ -1,21 +1,20 @@
-import Content from 'parts/News/Content';
-import Header from 'parts/Header';
-import Hero from 'parts/News/Hero';
-import React, { Component } from 'react';
 import Footer from 'parts/Footer';
+import Header from 'parts/Header';
+import DetailsContent from 'parts/News/DetailsContent';
+import React, { Component } from 'react';
 
-export default class NewsPage extends Component {
+export default class DetailsNewsPage extends Component {
   componentDidMount() {
     window.scroll(0, 0);
-    document.title = 'WEBA | News';
+    document.title = 'WEBA | Details News';
   }
+
   render() {
     return (
       <>
         <Header {...this.props}></Header>
         <div className="landing-page-body">
-          <Hero />
-          <Content />
+          <DetailsContent />
         </div>
         <Footer />
       </>

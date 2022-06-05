@@ -32,7 +32,6 @@ export default function Content() {
           ></div>
         </div>
       </div>
-      <div className="pb-5"></div>
     </section>
   );
 }

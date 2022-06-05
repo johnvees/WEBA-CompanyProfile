@@ -29,7 +29,7 @@ export default function Content() {
           </p>
         </div>
       </div>
-      <div className="row align-items center p-3">
+      <div className="row align-items-center p-3">
         <div
           className="col-sm-6 border border-primary rounded-lg p-3"
           style={{ height: 350 }}

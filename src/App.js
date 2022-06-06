@@ -8,6 +8,7 @@ import NewsPage from 'pages/NewsPage';
 import DetailsNewsPage from 'pages/DetailsNewsPage';
 import AboutPage from 'pages/AboutPage';
 import ProductPage from 'pages/ProductPage';
+import DetailsProductPage from 'pages/DetailsProductPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Route path="/landing-page" component={LandingPage} />
         <Route path="/products" component={ProductPage} />
+        <Route path="/details/products" component={DetailsProductPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/news" component={NewsPage} />
         <Route path="/details/news" component={DetailsNewsPage} />

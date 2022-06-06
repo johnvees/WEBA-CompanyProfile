@@ -69,7 +69,7 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2"
+              className="img-fluid rounded-lg mb-2 w-100 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
             <h5 className="font-weight-bold text-light">Name of Product</h5>
@@ -81,7 +81,7 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2"
+              className="img-fluid rounded-lg mb-2 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
             <h5 className="font-weight-bold text-light">Name of Product</h5>
@@ -93,7 +93,7 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2"
+              className="img-fluid rounded-lg mb-2 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
             <h5 className="font-weight-bold text-light">Name of Product</h5>
@@ -105,7 +105,7 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2"
+              className="img-fluid rounded-lg mb-2 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
             <h5 className="font-weight-bold text-light">Name of Product</h5>
@@ -119,7 +119,7 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2"
+              className="img-fluid rounded-lg mb-2 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
             <h5 className="font-weight-bold text-light">Name of Product</h5>
@@ -131,7 +131,7 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2"
+              className="img-fluid rounded-lg mb-2 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
             <h5 className="font-weight-bold text-light">Name of Product</h5>
@@ -143,7 +143,7 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2"
+              className="img-fluid rounded-lg mb-2 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
             <h5 className="font-weight-bold text-light">Name of Product</h5>
@@ -155,7 +155,7 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2"
+              className="img-fluid rounded-lg mb-2 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
             <h5 className="font-weight-bold text-light">Name of Product</h5>

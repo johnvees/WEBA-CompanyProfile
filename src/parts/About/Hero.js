@@ -12,7 +12,7 @@ export default function Hero() {
             <br />
             DOLOR SIT AMET
           </h1>
-          <p className="text-gray-500 w-75">
+          <p className="text-light w-75">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad
@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="d-flex justify-content-center">
             <img
               src={ImageHero_}
-              alt="Image Inside Factory"
+              alt="Inside Factory"
               className="img-fluid"
               style={{
                 objectFit: 'cover',

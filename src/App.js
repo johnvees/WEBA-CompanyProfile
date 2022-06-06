@@ -7,12 +7,14 @@ import ContactPage from 'pages/ContactPage';
 import NewsPage from 'pages/NewsPage';
 import DetailsNewsPage from 'pages/DetailsNewsPage';
 import AboutPage from 'pages/AboutPage';
+import ProductPage from 'pages/ProductPage';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Route path="/landing-page" component={LandingPage} />
+        <Route path="/products" component={ProductPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/news" component={NewsPage} />
         <Route path="/details/news" component={DetailsNewsPage} />

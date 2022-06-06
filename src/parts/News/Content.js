@@ -29,53 +29,57 @@ export default function Content() {
           </p>
         </div>
       </div>
-      <div className="row align-items-center p-3">
-        <div
-          className="col-sm-6 border border-primary rounded-lg p-3"
-          style={{ height: 350 }}
-        >
-          <img
-            src={ImageProduct_}
-            alt="Shoe Product"
-            className="img-fluid rounded-lg w-100"
-            style={{ height: 240, objectFit: 'cover' }}
-          />
-          <div className="mt-2">
-            <h3 className="font-weight-bold mb-2 text-light">
-              Our Latest News
-            </h3>
-            <p className="text-gray-500 text-truncate w-75">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit, sed diam nonummy nibh euismod
-              tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-              enim ad
-            </p>
+      <div className="row align-items-center">
+        <div className="col-sm-6 p-3">
+          <div
+            className="border border-primary rounded-lg p-3"
+            style={{ height: 350 }}
+          >
+            <img
+              src={ImageProduct_}
+              alt="Shoe Product"
+              className="img-fluid rounded-lg w-100"
+              style={{ height: 240, objectFit: 'cover' }}
+            />
+            <div className="mt-2">
+              <h3 className="font-weight-bold mb-2 text-light">
+                Our Latest News
+              </h3>
+              <p className="text-gray-500 text-truncate w-75">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad Lorem ipsum dolor sit
+                amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Ut wisi enim ad
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          className="col-sm-6 border border-primary rounded-lg p-3"
-          style={{ height: 350 }}
-        >
-          <img
-            src={ImageProduct_}
-            alt="Shoe Product"
-            className="img-fluid rounded-lg w-100"
-            style={{ height: 240, objectFit: 'cover' }}
-          />
-          <div className="mt-2">
-            <h3 className="font-weight-bold mb-2 text-light">
-              Our Latest News
-            </h3>
-            <p className="text-gray-500 text-truncate w-75">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit, sed diam nonummy nibh euismod
-              tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-              enim ad
-            </p>
+        <div className="col-sm-6 p-3">
+          <div
+            className="border border-primary rounded-lg p-3"
+            style={{ height: 350 }}
+          >
+            <img
+              src={ImageProduct_}
+              alt="Shoe Product"
+              className="img-fluid rounded-lg w-100"
+              style={{ height: 240, objectFit: 'cover' }}
+            />
+            <div className="mt-2">
+              <h3 className="font-weight-bold mb-2 text-light">
+                Our Latest News
+              </h3>
+              <p className="text-gray-500 text-truncate w-75">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad Lorem ipsum dolor sit
+                amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Ut wisi enim ad
+              </p>
+            </div>
           </div>
         </div>
       </div>

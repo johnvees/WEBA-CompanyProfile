@@ -22,7 +22,7 @@ export default class LandingPage extends Component {
           <Hero />
           <Product data={dummyData.productsLanding} />
           <About />
-          <Client />
+          <Client data={dummyData.clients} />
         </div>
         <Footer />
       </>

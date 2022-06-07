@@ -20,5 +20,47 @@
       "_id": "asd1293uasdads1",
       "imageUrl": "/images/shoes5.webp"
     }
+  ],
+  "clients": [
+    {
+      "_id": "das1293uasdads1",
+      "name": "Client 1",
+      "imageUrl": "/images/logo1.webp"
+    },
+    {
+      "_id": "das1293uasdads1",
+      "name": "Client 2",
+      "imageUrl": "/images/logo2.webp"
+    },
+    {
+      "_id": "das1293uasdads1",
+      "name": "Client 3",
+      "imageUrl": "/images/logo3.webp"
+    },
+    {
+      "_id": "das1293uasdads1",
+      "name": "Client 4",
+      "imageUrl": "/images/logo4.webp"
+    },
+    {
+      "_id": "das1293uasdads1",
+      "name": "Client 5",
+      "imageUrl": "/images/logo5.webp"
+    },
+    {
+      "_id": "das1293uasdads1",
+      "name": "Client 6",
+      "imageUrl": "/images/logo6.webp"
+    },
+    {
+      "_id": "das1293uasdads1",
+      "name": "Client 7",
+      "imageUrl": "/images/logo7.webp"
+    },
+    {
+      "_id": "das1293uasdads1",
+      "name": "Client 8",
+      "imageUrl": "/images/logo8.webp"
+    }
   ]
 }

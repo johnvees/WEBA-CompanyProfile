@@ -6,6 +6,8 @@ import Product from 'parts/Landing/Product';
 import About from 'parts/Landing/About';
 import Client from 'parts/Landing/Client';
 import Footer from 'parts/Footer';
+
+import dummyData from 'json/dummyData.json';
 export default class LandingPage extends Component {
   componentDidMount() {
     window.scroll(0, 0);
@@ -18,7 +20,7 @@ export default class LandingPage extends Component {
         <Header {...this.props}></Header>
         <div className="landing-page-body">
           <Hero />
-          <Product />
+          <Product data={dummyData.productsLanding} />
           <About />
           <Client />
         </div>

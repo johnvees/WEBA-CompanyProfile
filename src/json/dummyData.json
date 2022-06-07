@@ -112,5 +112,30 @@
       "client": "Client5",
       "imageUrl": "/images/shoes3.webp"
     }
+  ],
+  "history": {
+    "projects": "89",
+    "clients": "66",
+    "products": "123456"
+  },
+  "leader": [
+    {
+      "_id": "lea1293uasdads1",
+      "name": "Panji Budiono",
+      "department": "Direktur Utama",
+      "imageUrl": "/images/shoes2.webp"
+    },
+    {
+      "_id": "lea1293uasdads1",
+      "name": "Royse Nusa Magdalena",
+      "department": "Administrasi dan Penjualan",
+      "imageUrl": "/images/shoes5.webp"
+    },
+    {
+      "_id": "lea1293uasdads1",
+      "name": "Beni Vespayadi",
+      "department": "Pembukuan",
+      "imageUrl": "/images/shoes2.webp"
+    }
   ]
 }

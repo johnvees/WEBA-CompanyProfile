@@ -6,6 +6,7 @@ import Footer from 'parts/Footer';
 import Header from 'parts/Header';
 import React, { Component } from 'react';
 
+import dummyData from 'json/dummyData.json';
 export default class AboutPage extends Component {
   componentDidMount() {
     window.scroll(0, 0);
@@ -17,9 +18,9 @@ export default class AboutPage extends Component {
         <Header {...this.props}></Header>
         <div className="landing-page-body">
           <Hero />
-          <History />
+          <History data={dummyData.history} />
           <Vision />
-          <Leader />
+          <Leader data={dummyData.leader} />
         </div>
         <Footer />
       </>

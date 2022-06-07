@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function History() {
+export default function History(props) {
   return (
     <section className="container pt-5 pb-5">
       <div className="row align-items-center">
@@ -10,22 +10,26 @@ export default function History() {
               className="col-6 border border-primary "
               style={{ height: 100 }}
             >
-              <h3 className="font-weight-bold text-yellow text-center">99</h3>
-              <p className="text-center text-light">projects</p>
+              <h3 className="font-weight-bold text-yellow text-center">
+                {props.data.projects}
+              </h3>
+              <p className="text-center text-light">Projects</p>
             </div>
             <div
               className="col-6 border border-primary "
               style={{ height: 100 }}
             >
-              <h3 className="font-weight-bold text-yellow text-center">99</h3>
-              <p className="text-center text-light">projects</p>
+              <h3 className="font-weight-bold text-yellow text-center">
+                {props.data.clients}
+              </h3>
+              <p className="text-center text-light">Clients</p>
             </div>
           </div>
           <div className="border border-primary " style={{ height: 100 }}>
             <h3 className="font-weight-bold text-yellow text-center">
-              999.999
+              {props.data.products}
             </h3>
-            <p className="text-center text-light">projects</p>
+            <p className="text-center text-light">Products That've Been Made</p>
           </div>
         </div>
         <div className="col-sm-2"></div>

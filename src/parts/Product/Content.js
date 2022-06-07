@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageProduct_ from 'assets/images/imageProduct_.jpg';
 
-export default function Content() {
+export default function Content(props) {
   return (
     <section className="container pb-5 pt-5">
       <h1 className="font-weight-bold mb-3 text-yellow text-center">
@@ -9,57 +9,130 @@ export default function Content() {
       </h1>
       <h5 className="text-light text-center mb-5">11 Products</h5>
       <div className="row align-items-center">
-        <div className="col-sm-7 p-2">
-          <div className="border border-primary rounded-lg p-3">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg w-100 mb-3"
-              style={{ objectFit: 'cover', height: 300 }}
-            />
-            <h4 className="text-light font-weight-bold">Name of Product</h4>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
+        {props.data.map((item, index) => {
+          if (index === 0) {
+            return (
+              <div className="col-sm-7 p-2">
+                <div className="border border-primary rounded-lg p-3">
+                  <img
+                    src={item.imageUrl}
+                    alt="Shoe Product"
+                    className="img-fluid rounded-lg w-100 mb-3"
+                    style={{ objectFit: 'cover', height: 300 }}
+                  />
+                  <h4 className="text-light font-weight-bold">{item.name}</h4>
+                  <p className="text-gray-500 mb-0">{item.client}</p>
+                </div>
+              </div>
+            );
+          }
+        })}
         <div className="col-sm-5">
           <div className="row p-2">
-            <div className="col-sm-12 border border-primary rounded-lg p-2">
-              <div className="d-flex">
-                <div className="col-6 p-0">
+            {props.data.map((item, index) => {
+              if (index === 1) {
+                return (
+                  <div className="col-sm-12 border border-primary rounded-lg p-2 mb-2">
+                    <div className="d-flex">
+                      <div className="col-6 p-0">
+                        <img
+                          src={item.imageUrl}
+                          alt="Shoe Product"
+                          className="img-fluid rounded-lg w-100"
+                          style={{ objectFit: 'cover', height: 180 }}
+                        />
+                      </div>
+                      <div className="col-6 mt-4">
+                        <h5 className="font-weight-bold text-light">
+                          {item.name}
+                        </h5>
+                        <p className="text-gray-500 mb-0">{item.client}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              } else if (index === 2) {
+                return (
+                  <div className="col-sm-12 border border-primary rounded-lg p-2 mt-2">
+                    <div className="d-flex">
+                      <div className="col-6 p-0">
+                        <img
+                          src={item.imageUrl}
+                          alt="Shoe Product"
+                          className="img-fluid rounded-lg w-100"
+                          style={{ objectFit: 'cover', height: 180 }}
+                        />
+                      </div>
+                      <div className="col-6 mt-4">
+                        <h5 className="font-weight-bold text-light">
+                          {item.name}
+                        </h5>
+                        <p className="text-gray-500 mb-0">
+                          {item.client}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="row align-items-center">
+        {props.data.map((item, index) => {
+          if (index >= 3) {
+            return (
+              <div className="col-sm-3 p-2">
+                <div className="border border-primary rounded-lg p-2">
                   <img
-                    src={ImageProduct_}
+                    src={item.imageUrl}
                     alt="Shoe Product"
-                    className="img-fluid rounded-lg"
+                    className="img-fluid rounded-lg mb-2 w-100"
                     style={{ objectFit: 'cover', height: 180 }}
                   />
-                </div>
-                <div className="col-6 mt-4">
-                  <h5 className="font-weight-bold text-light">
-                    Name of Product
-                  </h5>
-                  <p className="text-gray-500 mb-0">Name of Client</p>
+                  <h5 className="font-weight-bold text-light">{item.name}</h5>
+                  <p className="text-gray-500 mb-0">{item.client}</p>
                 </div>
               </div>
-            </div>
-            <div className="p-2"></div>
-            <div className="col-sm-12 border border-primary rounded-lg p-2">
-              <div className="d-flex">
-                <div className="col-6 p-0">
-                  <img
-                    src={ImageProduct_}
-                    alt="Shoe Product"
-                    className="img-fluid rounded-lg"
-                    style={{ objectFit: 'cover', height: 180 }}
-                  />
-                </div>
-                <div className="col-6 mt-4">
-                  <h5 className="font-weight-bold text-light">
-                    Name of Product
-                  </h5>
-                  <p className="text-gray-500 mb-0">Name of Client</p>
-                </div>
-              </div>
-            </div>
+            );
+          }
+        })}
+
+        {/* <div className="col-sm-3 p-2">
+          <div className="border border-primary rounded-lg p-2">
+            <img
+              src={ImageProduct_}
+              alt="Shoe Product"
+              className="img-fluid rounded-lg mb-2 w-100"
+              style={{ objectFit: 'cover', height: 180 }}
+            />
+            <h5 className="font-weight-bold text-light">Name of Product</h5>
+            <p className="text-gray-500 mb-0">Name of Client</p>
+          </div>
+        </div>
+        <div className="col-sm-3 p-2">
+          <div className="border border-primary rounded-lg p-2">
+            <img
+              src={ImageProduct_}
+              alt="Shoe Product"
+              className="img-fluid rounded-lg mb-2 w-100"
+              style={{ objectFit: 'cover', height: 180 }}
+            />
+            <h5 className="font-weight-bold text-light">Name of Product</h5>
+            <p className="text-gray-500 mb-0">Name of Client</p>
+          </div>
+        </div>
+        <div className="col-sm-3 p-2">
+          <div className="border border-primary rounded-lg p-2">
+            <img
+              src={ImageProduct_}
+              alt="Shoe Product"
+              className="img-fluid rounded-lg mb-2 w-100"
+              style={{ objectFit: 'cover', height: 180 }}
+            />
+            <h5 className="font-weight-bold text-light">Name of Product</h5>
+            <p className="text-gray-500 mb-0">Name of Client</p>
           </div>
         </div>
       </div>
@@ -69,56 +142,6 @@ export default function Content() {
             <img
               src={ImageProduct_}
               alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-      </div>
-      <div className="row align-items-center">
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
               className="img-fluid rounded-lg mb-2 w-100"
               style={{ objectFit: 'cover', height: 180 }}
             />
@@ -161,7 +184,7 @@ export default function Content() {
             <h5 className="font-weight-bold text-light">Name of Product</h5>
             <p className="text-gray-500 mb-0">Name of Client</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-import ImageProduct_ from 'assets/images/imageProduct_.jpg';
 
 export default function Content(props) {
   return (
@@ -67,9 +66,7 @@ export default function Content(props) {
                         <h5 className="font-weight-bold text-light">
                           {item.name}
                         </h5>
-                        <p className="text-gray-500 mb-0">
-                          {item.client}
-                        </p>
+                        <p className="text-gray-500 mb-0">{item.client}</p>
                       </div>
                     </div>
                   </div>
@@ -98,93 +95,6 @@ export default function Content(props) {
             );
           }
         })}
-
-        {/* <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-      </div>
-      <div className="row align-items-center">
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div>
-        <div className="col-sm-3 p-2">
-          <div className="border border-primary rounded-lg p-2">
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg mb-2 w-100"
-              style={{ objectFit: 'cover', height: 180 }}
-            />
-            <h5 className="font-weight-bold text-light">Name of Product</h5>
-            <p className="text-gray-500 mb-0">Name of Client</p>
-          </div>
-        </div> */}
       </div>
     </section>
   );

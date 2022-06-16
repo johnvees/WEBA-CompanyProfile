@@ -1,0 +1,30 @@
+{
+  "_id": "asd1293uasdads1",
+  "productCode": "SPTWB0001",
+  "name": "Free RN Flyknitz",
+  "description": "Nulla dolore id aute culpa reprehenderit voluptate voluptate id. Culpa ad consequat enim duis. Elit anim eiusmod labore minim officia dolor laborum laborum minim nisi anim aute voluptate. Cillum do non ipsum Lorem laborum proident laboris laboris nostrud fugiat aute ut minim elit.",
+  "imageUrls": [
+    {
+      "_id": "asd1293uasdads1",
+      "url": "/images/shoes1.webp"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "url": "/images/shoes2.webp"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "url": "/images/shoes3.webp"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "url": "/images/shoes4.webp"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "url": "/images/shoes5.webp"
+    }
+  ],
+  "details": "Reprehenderit reprehenderit culpa officia do non incididunt quis voluptate incididunt culpa. Do ex pariatur do mollit elit proident ad. Consequat magna ex proident ut magna proident duis proident proident. Ea pariatur laborum pariatur ea enim eu proident eiusmod mollit adipisicing ullamco.",
+  "materials": "Et est duis qui in mollit cupidatat sit incididunt."
+}

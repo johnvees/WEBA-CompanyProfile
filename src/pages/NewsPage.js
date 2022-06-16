@@ -4,6 +4,7 @@ import Hero from 'parts/News/Hero';
 import React, { Component } from 'react';
 import Footer from 'parts/Footer';
 
+import dummyData from 'json/dummyData.json';
 export default class NewsPage extends Component {
   componentDidMount() {
     window.scroll(0, 0);
@@ -15,7 +16,7 @@ export default class NewsPage extends Component {
         <Header {...this.props}></Header>
         <div className="landing-page-body">
           <Hero />
-          <Content />
+          <Content data={dummyData.news} />
         </div>
         <Footer />
       </>

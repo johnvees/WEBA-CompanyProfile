@@ -1,7 +1,5 @@
 import React from 'react';
 
-import ImageProduct_ from 'assets/images/imageProduct_.jpg';
-
 export default function Client(props) {
   return (
     <section className="container pt-5 pb-5">

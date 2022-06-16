@@ -23,10 +23,10 @@ export default function Leader(props) {
                 style={{ position: 'absolute', bottom: 20, left: 20 }}
               >
                 <h2 className="text-dark font-weight-bold">{item.name}</h2>
-                <p className="text-gray-500">{item.department}</p>
+                <p className="text-dark">{item.department}</p>
               </div>
             </div>
-          );
+          ); 
         })}        
       </div>
     </section>

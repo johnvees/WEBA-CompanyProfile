@@ -1,5 +1,7 @@
 import React from 'react';
 
+import numberFormat from 'utils/formatNumber';
+
 export default function History(props) {
   return (
     <section className="container pt-5 pb-5">
@@ -11,7 +13,7 @@ export default function History(props) {
               style={{ height: 100 }}
             >
               <h3 className="font-weight-bold text-yellow text-center">
-                {props.data.projects}
+                {numberFormat(props.data.projects)}
               </h3>
               <p className="text-center text-light">Projects</p>
             </div>
@@ -20,14 +22,14 @@ export default function History(props) {
               style={{ height: 100 }}
             >
               <h3 className="font-weight-bold text-yellow text-center">
-                {props.data.clients}
+                {numberFormat(props.data.clients)}
               </h3>
               <p className="text-center text-light">Clients</p>
             </div>
           </div>
           <div className="border border-primary " style={{ height: 100 }}>
             <h3 className="font-weight-bold text-yellow text-center">
-              {props.data.products}
+              {numberFormat(props.data.products)}
             </h3>
             <p className="text-center text-light">Products That've Been Made</p>
           </div>

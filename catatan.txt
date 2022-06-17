@@ -1,5 +1,5 @@
 1. menambahkan key pada setiap map (double check kerjaan di section mostpicked)
 
-2. 
+2. menambahkan react reveal untuk animation (menambahkan react reveal)
 
 () = ada di video

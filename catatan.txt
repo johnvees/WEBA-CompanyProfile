@@ -2,4 +2,6 @@
 
 2. menambahkan react reveal untuk animation (menambahkan react reveal)
 
+3. react html parser agar data json bisa dibuat html dan bisa break line (page detail description)
+
 () = ada di video

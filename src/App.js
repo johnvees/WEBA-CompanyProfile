@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Route exact path="/" component={LandingPage} />
         <Route path="/landing-page" component={LandingPage} />
         <Route path="/products" component={ProductPage} />
         <Route path="/details/products/:id" component={DetailsProductPage} />

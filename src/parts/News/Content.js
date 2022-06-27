@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from 'elements/Button';
+
 export default function Content(props) {
   return (
     <section className="container pb-5 pt-5">
@@ -13,20 +15,22 @@ export default function Content(props) {
               className="border border-primary rounded-lg w-100 p-3 mb-3"
               style={{ height: 700 }}
             >
-              <img
-                src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
-                alt="Shoe Product"
-                className="img-fluid rounded-lg w-100"
-                style={{ height: 550, objectFit: 'cover' }}
-              />
-              <div className="mt-3">
-                <h3 className="font-weight-bold mb-2 text-light text-truncate w-100">
-                  {item.judul}
-                </h3>
-                <p className="text-gray-500 text-truncate w-75">
-                  {item.deskripsi}
-                </p>
-              </div>
+              <Button type="link" href={`/details/news/${item._id}`}>
+                <img
+                  src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
+                  alt="Shoe Product"
+                  className="img-fluid rounded-lg w-100"
+                  style={{ height: 550, objectFit: 'cover' }}
+                />
+                <div className="mt-3">
+                  <h3 className="font-weight-bold mb-2 text-light text-truncate w-100">
+                    {item.judul}
+                  </h3>
+                  <p className="text-gray-500 text-truncate w-75">
+                    {item.deskripsi}
+                  </p>
+                </div>
+              </Button>
             </div>
           );
         }

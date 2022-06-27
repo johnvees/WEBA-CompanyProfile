@@ -6,8 +6,8 @@ import Header from 'parts/Header';
 import DetailsContent from 'parts/Product/DetailsContent';
 import FeaturedProduct from 'parts/Product/FeaturedProduct';
 
-import dummyData from 'json/dummyData.json';
-import dummyDetails from 'json/itemDetails.json';
+// import dummyData from 'json/dummyData.json';
+// import dummyDetails from 'json/itemDetails.json';
 
 import { fetchPage } from 'store/actions/page';
 

@@ -43,11 +43,13 @@ export default function Leader(props) {
           <div className="row align-items-center ">
             {resultNama.map((item, index) => {
               return (
-                <div className="col-sm-4">
-                  <h2 className="text-light font-weight-bold">
-                    {item.namaLeader}
-                  </h2>
-                </div>
+                <Fade bottom delay={500 * index}>
+                  <div className="col-sm-4">
+                    <h2 className="text-light font-weight-bold">
+                      {item.namaLeader}
+                    </h2>
+                  </div>
+                </Fade>
               );
             })}
           </div>
@@ -55,9 +57,11 @@ export default function Leader(props) {
           <div className="row align-items-center ">
             {resultJabatan.map((item, index) => {
               return (
-                <div className="col-sm-4">
-                  <p className="text-light">{item.jabatanLeader}</p>
-                </div>
+                <Fade bottom delay={500 * index}>
+                  <div className="col-sm-4">
+                    <p className="text-light">{item.jabatanLeader}</p>
+                  </div>
+                </Fade>
               );
             })}
           </div>

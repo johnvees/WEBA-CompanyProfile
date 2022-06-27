@@ -15,7 +15,7 @@ export default function History(props) {
                 style={{ height: 100 }}
               >
                 <h3 className="font-weight-bold text-yellow text-center">
-                  {numberFormat(props.data.projects)}
+                  {numberFormat(props.data[0].jmlProject)}
                 </h3>
                 <p className="text-center text-light">Projects</p>
               </div>
@@ -24,14 +24,14 @@ export default function History(props) {
                 style={{ height: 100 }}
               >
                 <h3 className="font-weight-bold text-yellow text-center">
-                  {numberFormat(props.data.clients)}
+                  {numberFormat(props.data[0].jmlClient)}
                 </h3>
                 <p className="text-center text-light">Clients</p>
               </div>
             </div>
             <div className="border border-primary " style={{ height: 100 }}>
               <h3 className="font-weight-bold text-yellow text-center">
-                {numberFormat(props.data.products)}
+                {numberFormat(props.data[0].jmlProdukJadi)}
               </h3>
               <p className="text-center text-light">
                 Products That've Been Made

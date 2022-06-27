@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from 'elements/Button';
+
 export default function Product(props) {
   return (
     <section className="container pt-5 pb-5">
@@ -11,12 +13,14 @@ export default function Product(props) {
           if (index === 0) {
             return (
               <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 p-2">
-                <img
-                  src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
-                  alt="Shoe Product"
-                  className="img-fluid rounded"
-                  style={{ objectFit: 'cover' }}
-                />
+                <Button type="link" href={`/details/products/${item._id}`}>
+                  <img
+                    src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
+                    alt="Shoe Product"
+                    className="img-fluid rounded"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </Button>
               </div>
             );
           }
@@ -27,12 +31,14 @@ export default function Product(props) {
             if (index >= 1 && index <= 4) {
               return (
                 <div className="col-sm-6 p-2">
-                  <img
-                    src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
-                    alt="Shoe Product"
-                    className="img-fluid rounded w-100"
-                    style={{ height: 180, objectFit: 'cover' }}
-                  />
+                  <Button type="link" href={`/details/products/${item._id}`}>
+                    <img
+                      src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
+                      alt="Shoe Product"
+                      className="img-fluid rounded w-100"
+                      style={{ height: 180, objectFit: 'cover' }}
+                    />
+                  </Button>
                 </div>
               );
             }

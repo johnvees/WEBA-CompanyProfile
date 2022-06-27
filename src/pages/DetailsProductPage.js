@@ -1,20 +1,51 @@
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import Footer from 'parts/Footer';
 import Header from 'parts/Header';
 import DetailsContent from 'parts/Product/DetailsContent';
 import FeaturedProduct from 'parts/Product/FeaturedProduct';
-import React, { Component } from 'react';
 
 import dummyData from 'json/dummyData.json';
 import dummyDetails from 'json/itemDetails.json';
-export default class DetailsProductPage extends Component {
+
+import { fetchPage } from 'store/actions/page';
+
+class DetailsProductPage extends Component {
   componentDidMount() {
     window.scroll(0, 0);
     document.title = 'WEBA | Details Product';
+
+    if (!this.props.page[this.props.match.params.id]) {
+      this.props.fetchPage(
+        `${process.env.REACT_APP_HOST}/api/v1/member/detail-products-page/${this.props.match.params.id}`,
+        this.props.match.params.id
+      );
+    }
+
+    if (!this.props.page.productsPage) {
+      this.props.fetchPage(
+        `${process.env.REACT_APP_HOST}/api/v1/member/products-page`,
+        'productsPage'
+      );
+    }
   }
 
   render() {
+    const { page, match } = this.props;
+
+    console.log(page);
+
+    if (!page[match.params.id]) {
+      return null;
+    }
+
+    if (!page.hasOwnProperty('productsPage')) {
+      return null;
+    }
+
     const breadcrumb = [
-      { pageTitle: 'Products', pageHref: '/landing-page' },
+      { pageTitle: 'Products', pageHref: '/products' },
       { pageTitle: 'Product Details', pageHref: '' },
     ];
 
@@ -22,11 +53,20 @@ export default class DetailsProductPage extends Component {
       <>
         <Header {...this.props}></Header>
         <div className="landing-page-body">
-          <DetailsContent data={dummyDetails} breadcrumb={breadcrumb} />
-          <FeaturedProduct data={dummyData.products} />
+          <DetailsContent
+            data={page[match.params.id]}
+            breadcrumb={breadcrumb}
+          />
+          <FeaturedProduct data={page.productsPage.products} />
         </div>
         <Footer />
       </>
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  page: state.page,
+});
+
+export default connect(mapStateToProps, { fetchPage })(DetailsProductPage);

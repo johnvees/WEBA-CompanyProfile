@@ -16,12 +16,12 @@ export default function Client(props) {
               >
                 <div className="text-center p-3">
                   <img
-                    src={item.imageUrl}
+                    src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
                     alt="Logo"
                     style={{ height: 63, width: 63, objectFit: 'cover' }}
                     className="img-fluid"
                   />
-                  <p className="m-0 font-weight-bold">{item.name}</p>
+                  <p className="m-0 font-weight-bold">{item.nama}</p>
                 </div>
               </div>
             </div>

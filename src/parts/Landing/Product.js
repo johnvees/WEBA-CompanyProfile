@@ -12,7 +12,7 @@ export default function Product(props) {
             return (
               <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 p-2">
                 <img
-                  src={item.imageUrl}
+                  src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
                   alt="Shoe Product"
                   className="img-fluid rounded"
                   style={{ objectFit: 'cover' }}
@@ -28,7 +28,7 @@ export default function Product(props) {
               return (
                 <div className="col-sm-6 p-2">
                   <img
-                    src={item.imageUrl}
+                    src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
                     alt="Shoe Product"
                     className="img-fluid rounded w-100"
                     style={{ height: 180, objectFit: 'cover' }}

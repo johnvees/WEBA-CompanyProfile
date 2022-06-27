@@ -3,10 +3,6 @@ import React from 'react';
 export default function Content(props) {
   return (
     <section className="container pb-5 pt-5">
-      <h1 className="font-weight-bold mb-3 text-yellow text-center">
-        PRODUCT CATALOG
-      </h1>
-      <h5 className="text-light text-center mb-5">11 Products</h5>
       <div className="row align-items-center">
         {props.data.map((item, index) => {
           if (index === 0) {
@@ -14,13 +10,13 @@ export default function Content(props) {
               <div className="col-sm-7 p-2">
                 <div className="border border-primary rounded-lg p-3">
                   <img
-                    src={item.imageUrl}
+                    src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
                     alt="Shoe Product"
                     className="img-fluid rounded-lg w-100 mb-3"
                     style={{ objectFit: 'cover', height: 300 }}
                   />
-                  <h4 className="text-light font-weight-bold">{item.name}</h4>
-                  <p className="text-gray-500 mb-0">{item.client}</p>
+                  <h4 className="text-light font-weight-bold">{item.nama}</h4>
+                  <p className="text-gray-500 mb-0">{item.client.nama}</p>
                 </div>
               </div>
             );
@@ -35,7 +31,7 @@ export default function Content(props) {
                     <div className="d-flex">
                       <div className="col-6 p-0">
                         <img
-                          src={item.imageUrl}
+                          src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
                           alt="Shoe Product"
                           className="img-fluid rounded-lg w-100"
                           style={{ objectFit: 'cover', height: 180 }}
@@ -43,9 +39,9 @@ export default function Content(props) {
                       </div>
                       <div className="col-6 mt-4">
                         <h5 className="font-weight-bold text-light">
-                          {item.name}
+                          {item.nama}
                         </h5>
-                        <p className="text-gray-500 mb-0">{item.client}</p>
+                        <p className="text-gray-500 mb-0">{item.client.nama}</p>
                       </div>
                     </div>
                   </div>
@@ -56,7 +52,7 @@ export default function Content(props) {
                     <div className="d-flex">
                       <div className="col-6 p-0">
                         <img
-                          src={item.imageUrl}
+                          src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
                           alt="Shoe Product"
                           className="img-fluid rounded-lg w-100"
                           style={{ objectFit: 'cover', height: 180 }}
@@ -64,9 +60,9 @@ export default function Content(props) {
                       </div>
                       <div className="col-6 mt-4">
                         <h5 className="font-weight-bold text-light">
-                          {item.name}
+                          {item.nama}
                         </h5>
-                        <p className="text-gray-500 mb-0">{item.client}</p>
+                        <p className="text-gray-500 mb-0">{item.client.nama}</p>
                       </div>
                     </div>
                   </div>
@@ -83,13 +79,13 @@ export default function Content(props) {
               <div className="col-sm-3 p-2">
                 <div className="border border-primary rounded-lg p-2">
                   <img
-                    src={item.imageUrl}
+                    src={`${process.env.REACT_APP_HOST}/${item.gambarId[0].imageUrl}`}
                     alt="Shoe Product"
                     className="img-fluid rounded-lg mb-2 w-100"
                     style={{ objectFit: 'cover', height: 180 }}
                   />
-                  <h5 className="font-weight-bold text-light">{item.name}</h5>
-                  <p className="text-gray-500 mb-0">{item.client}</p>
+                  <h5 className="font-weight-bold text-light">{item.nama}</h5>
+                  <p className="text-gray-500 mb-0">{item.client.nama}</p>
                 </div>
               </div>
             );

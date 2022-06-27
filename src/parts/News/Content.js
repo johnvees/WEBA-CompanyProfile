@@ -14,17 +14,17 @@ export default function Content(props) {
               style={{ height: 700 }}
             >
               <img
-                src={item.imageUrl}
+                src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
                 alt="Shoe Product"
                 className="img-fluid rounded-lg w-100"
                 style={{ height: 550, objectFit: 'cover' }}
               />
               <div className="mt-3">
                 <h3 className="font-weight-bold mb-2 text-light text-truncate w-100">
-                  {item.title}
+                  {item.judul}
                 </h3>
                 <p className="text-gray-500 text-truncate w-75">
-                  {item.description}
+                  {item.deskripsi}
                 </p>
               </div>
             </div>
@@ -42,17 +42,17 @@ export default function Content(props) {
                   style={{ height: 350 }}
                 >
                   <img
-                    src={item.imageUrl}
+                    src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
                     alt="Shoe Product"
                     className="img-fluid rounded-lg w-100"
                     style={{ height: 240, objectFit: 'cover' }}
                   />
                   <div className="mt-2">
                     <h3 className="font-weight-bold mb-2 text-light text-truncate w-100">
-                      {item.title}
+                      {item.judul}
                     </h3>
                     <p className="text-gray-500 text-truncate w-75">
-                      {item.description}
+                      {item.deskripsi}
                     </p>
                   </div>
                 </div>

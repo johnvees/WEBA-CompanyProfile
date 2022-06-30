@@ -6,7 +6,6 @@ import Button from 'elements/Button';
 export default function Content(props) {
   return (
     <section className="container pb-5 pt-5">
-      <Fade bottom>
         <h2 className="font-weight-bold mb-3 text-yellow text-center">
           Our Latest News
         </h2>
@@ -40,82 +39,6 @@ export default function Content(props) {
           }
         })}
 
-        {/* {props.data.map((item, index) => {
-        if (index >= 0 && index <=3) {
-           return (
-             <div
-               id="carouselExampleIndicators"
-               className="carousel slide"
-               data-ride="carousel"
-             >
-               <ol className="carousel-indicators">
-                 <li
-                   data-target="#carouselExampleIndicators"
-                   data-slide-to="0"
-                   className="active"
-                 ></li>
-                 <li
-                   data-target="#carouselExampleIndicators"
-                   data-slide-to="1"
-                 ></li>
-                 <li
-                   data-target="#carouselExampleIndicators"
-                   data-slide-to="2"
-                 ></li>
-               </ol>
-               <div className="carousel-inner">
-                 <div className="carousel-item active">
-                   <img
-                     src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
-                     className="d-block w-100"
-                     alt="..."
-                   />
-                 </div>
-                 <div className="carousel-item">
-                   <img
-                     src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
-                     className="d-block w-100"
-                     alt="..."
-                   />
-                 </div>
-                 <div className="carousel-item">
-                   <img
-                     src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
-                     className="d-block w-100"
-                     alt="..."
-                   />
-                 </div>
-               </div>
-               <button
-                 className="carousel-control-prev"
-                 type="button"
-                 data-target="#carouselExampleIndicators"
-                 data-slide="prev"
-               >
-                 <span
-                   className="carousel-control-prev-icon"
-                   aria-hidden="true"
-                 ></span>
-                 <span className="sr-only">Previous</span>
-               </button>
-               <button
-                 className="carousel-control-next"
-                 type="button"
-                 data-target="#carouselExampleIndicators"
-                 data-slide="next"
-               >
-                 <span
-                   className="carousel-control-next-icon"
-                   aria-hidden="true"
-                 ></span>
-                 <span className="sr-only">Next</span>
-               </button>
-             </div>
-           );
-        }
-       
-      })} */}
-
         <div className="row align-items-center">
           {props.data.map((item, index) => {
             if (index >= 1 && index <= 2) {
@@ -148,35 +71,7 @@ export default function Content(props) {
               );
             }
           })}
-
-          {/* <div className="col-sm-6 p-3">
-          <div
-            className="border border-primary rounded-lg p-3"
-            style={{ height: 350 }}
-          >
-            <img
-              src={ImageProduct_}
-              alt="Shoe Product"
-              className="img-fluid rounded-lg w-100"
-              style={{ height: 240, objectFit: 'cover' }}
-            />
-            <div className="mt-2">
-              <h3 className="font-weight-bold mb-2 text-light">
-                Our Latest News
-              </h3>
-              <p className="text-gray-500 text-truncate w-75">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad Lorem ipsum dolor sit
-                amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                Ut wisi enim ad
-              </p>
-            </div>
-          </div>
-        </div> */}
         </div>
-      </Fade>
     </section>
   );
 }

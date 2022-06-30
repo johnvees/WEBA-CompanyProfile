@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import ImageHero_ from 'assets/images/imageHero_.png';
+import ImageAbout from 'assets/images/imageAbout.jpg';
 
 export default function Hero() {
   return (
@@ -9,15 +9,13 @@ export default function Hero() {
       <div className="row align-items-center">
         <Fade bottom>
           <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 pr-5">
-            <h1 className="font-weight-bold mb-3 text-yellow">
-              LOREM IPSUM
-              <br />
-              DOLOR SIT AMET
-            </h1>
+            <h1 className="font-weight-bold mb-3 text-yellow">Kisah Kami</h1>
             <p className="text-light w-75">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad
+              WEBA Footwear adalah hasil dari pengalaman bertahun-tahun dalam
+              design, fitting, perkembangan & teknologi sepatu. Dikelola dengan
+              staff-staff yang berpengalaman, penggunaan material yang terbaik,
+              teknologi terbaru dan pengetesan produk yang rutin, kami
+              menghasilkan “ Outstanding Performance & Innovative Products ”
             </p>
           </div>
         </Fade>
@@ -25,7 +23,7 @@ export default function Hero() {
           <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
             <div className="d-flex justify-content-center">
               <img
-                src={ImageHero_}
+                src={ImageAbout}
                 alt="Inside Factory"
                 className="img-fluid"
                 style={{

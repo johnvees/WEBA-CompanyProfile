@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import ImageHero_ from 'assets/images/imageHero_.png';
+import ImageHero from 'assets/images/ImageHero.png';
 
 export default function Hero() {
   return (
@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
             <div className="d-flex justify-content-center">
               <img
-                src={ImageHero_}
+                src={ImageHero}
                 alt="Image Inside Factory"
                 className="img-fluid"
                 style={{

@@ -34,7 +34,7 @@ class NewsPage extends Component {
       <>
         <Header {...this.props}></Header>
         <div className="landing-page-body">
-          <Hero />
+          {/* <Hero /> */}
           <Content data={page.newsPage.news} />
         </div>
         <Footer />

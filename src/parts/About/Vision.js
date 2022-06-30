@@ -5,37 +5,22 @@ export default function Vision() {
   return (
     <section className="container pt-5 pb-5">
       <Fade bottom>
-        <h2 className="font-weight-bold mb-3 text-yellow text-center">
-          Vision
-        </h2>
+        <h2 className="font-weight-bold mb-3 text-yellow text-center">Visi</h2>
         <p className="text-light text-center mb-5">
-          Ad laborum anim officia sint ad sint elit consectetur anim elit sunt
-          do voluptate. Incididunt minim eu et fugiat cupidatat tempor
-          reprehenderit officia sit aliquip nulla excepteur laborum cupidatat.
-          Dolor ut ut eu cillum qui veniam do. Minim ex est mollit nisi velit
-          incididunt id aliqua deserunt in voluptate. Ea elit enim do et
-          consequat. Anim duis nulla est magna culpa.
+          Menjadi perusahaan sepatu yang bereputasi dan bernilai baik kepada
+          pelanggan, mitra bisnis, dan pekerja
         </p>
       </Fade>
       <Fade bottom>
-        <h2 className="font-weight-bold mb-3 text-yellow text-center">
-          Mission
-        </h2>
+        <h2 className="font-weight-bold mb-3 text-yellow text-center">Misi</h2>
         <p className="text-light text-center ">
-          Ad laborum anim officia sint ad sint elit consectetur anim elit sunt
-          do voluptate. Incididunt minim eu et fugiat cupidatat tempor
-          reprehenderit officia sit aliquip nulla excepteur laborum cupidatat.
-          Dolor ut ut eu cillum qui veniam do. Minim ex est mollit nisi velit
-          incididunt id aliqua deserunt in voluptate. Ea elit enim do et
-          consequat. Anim duis nulla est magna culpa.
+          Memberikan inovasi produk yang berkwalitas secara konsisten melalui
+          perkembangan teknologi, staff ahli dan penggunaan material terbaik
           <br />
           <br />
-          Ad laborum anim officia sint ad sint elit consectetur anim elit sunt
-          do voluptate. Incididunt minim eu et fugiat cupidatat tempor
-          reprehenderit officia sit aliquip nulla excepteur laborum cupidatat.
-          Dolor ut ut eu cillum qui veniam do. Minim ex est mollit nisi velit
-          incididunt id aliqua deserunt in voluptate. Ea elit enim do et
-          consequat. Anim duis nulla est magna culpa.
+          Berkomunikasi & berkerjasama secara sebagai satu tim dalam memenuhi
+          berbagai kebutuhan pelanggan untuk pengiriman tepat waktu & kepuasan
+          pelanggan
         </p>
       </Fade>
     </section>

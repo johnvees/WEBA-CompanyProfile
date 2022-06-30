@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import ImageHero_ from 'assets/images/imageHero_.png';
+import ImageHero from 'assets/images/ImageHero.png';
 
 export default function Hero() {
   return (
@@ -10,14 +10,12 @@ export default function Hero() {
         <Fade bottom>
           <div className="col-sm-5 col-md-5 col-lg-5 col-xl-5 pr-5">
             <h1 className="font-weight-bold mb-3 text-yellow">
-              LOREM IPSUM
+              WEBA FOOTWEAR
               <br />
-              DOLOR SIT AMET
+              Rajapaksi Adya Perkasa Group
             </h1>
             <p className="text-gray-500 w-75">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad
+              Berdiri di atas areal 5 hektar di Sidoarjo dan 4 hektar di Nganjuk, terdapat 1800 unit mesin jahit, 63 unit mesin potong. Dengan kapasitas 7.65 juta kapasitas produksi per tahun
             </p>
           </div>
         </Fade>
@@ -25,7 +23,7 @@ export default function Hero() {
           <div className="col-sm-7 col-md-7 col-lg-7 col-xl-7 ">
             <div>
               <img
-                src={ImageHero_}
+                src={ImageHero}
                 alt="Image Inside Factory"
                 className="img-fluid"
                 style={{ objectFit: 'cover' }}

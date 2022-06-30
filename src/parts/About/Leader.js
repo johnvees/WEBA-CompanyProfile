@@ -24,46 +24,114 @@ export default function Leader(props) {
           Our Leader
         </h2>
         <div className="row align-items-center">
-          {props.data[0].gambarId.map((item, index) => {
-            return (
-              <Fade bottom delay={500 * index}>
-                <div className="col-sm-4 p-2" style={{ position: 'relative' }}>
-                  <img
-                    src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
-                    alt="Shoe Product"
-                    className="img-fluid rounded-lg w-100"
-                    style={{ height: 500, objectFit: 'cover' }}
-                  />
-                </div>
-              </Fade>
-            );
-          })}
+          <div className="d-flex col-sm-6 p-0 justify-content-end">
+            {props.data[0].gambarId.map((item, index) => {
+              if (index === 0) {
+                return (
+                  <Fade bottom delay={500 * index}>
+                    <div
+                      className="col-sm-8 p-2"
+                      style={{ position: 'relative' }}
+                    >
+                      <img
+                        src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
+                        alt="Shoe Product"
+                        className="img-fluid rounded-lg w-100"
+                        style={{ height: 500, objectFit: 'cover' }}
+                      />
+                    </div>
+                  </Fade>
+                );
+              }
+            })}
+          </div>
+          <div className="col-sm-6 p-0">
+            {props.data[0].gambarId.map((item, index) => {
+              if (index === 1) {
+                return (
+                  <Fade bottom delay={500 * index}>
+                    <div
+                      className="col-sm-8 p-2"
+                      style={{ position: 'relative' }}
+                    >
+                      <img
+                        src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
+                        alt="Shoe Product"
+                        className="img-fluid rounded-lg w-100"
+                        style={{ height: 500, objectFit: 'cover' }}
+                      />
+                    </div>
+                  </Fade>
+                );
+              }
+            })}
+          </div>
         </div>
         <div className="justify-content-start align-items-end">
           <div className="row align-items-center ">
-            {resultNama.map((item, index) => {
-              return (
-                <Fade bottom delay={500 * index}>
-                  <div className="col-sm-4">
-                    <h2 className="text-light font-weight-bold">
-                      {item.namaLeader}
-                    </h2>
-                  </div>
-                </Fade>
-              );
-            })}
+            <div className="d-flex col-sm-6 p-0 justify-content-end">
+              {resultNama.map((item, index) => {
+                if (index === 0) {
+                  return (
+                    <Fade bottom delay={500 * index}>
+                      <div className="col-sm-8">
+                        <h2 className="text-light font-weight-bold text-right">
+                          {item.namaLeader}
+                        </h2>
+                      </div>
+                    </Fade>
+                  );
+                }
+              })}
+            </div>
+            <div className="col-sm-6 p-0">
+              {resultNama.map((item, index) => {
+                if (index === 1) {
+                  return (
+                    <Fade bottom delay={500 * index}>
+                      <div className="col-sm-8">
+                        <h2 className="text-light font-weight-bold text-left">
+                          {item.namaLeader}
+                        </h2>
+                      </div>
+                    </Fade>
+                  );
+                }
+              })}
+            </div>
           </div>
 
           <div className="row align-items-center ">
-            {resultJabatan.map((item, index) => {
-              return (
-                <Fade bottom delay={500 * index}>
-                  <div className="col-sm-4">
-                    <p className="text-light">{item.jabatanLeader}</p>
-                  </div>
-                </Fade>
-              );
-            })}
+            <div className="d-flex col-sm-6 p-0 justify-content-end">
+              {resultJabatan.map((item, index) => {
+                if (index === 0) {
+                  return (
+                    <Fade bottom delay={500 * index}>
+                      <div className="col-sm-8">
+                        <p className="text-light text-right">
+                          {item.jabatanLeader}
+                        </p>
+                      </div>
+                    </Fade>
+                  );
+                }
+              })}
+            </div>
+            <div className="col-sm-6 p-0">
+              {resultJabatan.map((item, index) => {
+                if (index === 1) {
+                  return (
+                    <Fade bottom delay={500 * index}>
+                      <div className="col-sm-8">
+                        <p className="text-light text-left">
+                          {item.jabatanLeader}
+                        </p>
+                      </div>
+                    </Fade>
+                  );
+                }
+              })}
+            </div>
           </div>
         </div>
       </Fade>
